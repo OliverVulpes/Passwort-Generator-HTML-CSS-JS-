@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="Container">
+        <h1>Passwort Generator</h1>
+        <h2>Gib eine länge zwischen 3 und 20 ein:</h2>
+        <div class="ValueContainer">
+            <div class="LegthContainer">
+                <label>Länge: </label>
+                <input type="number" id="zeichen" class="Zeichen" min="3" max="20" value="4">
+            </div>
+            <div class="SelectionContainer">
+                <label for="BigLetters">Groß-Buchstaben</label>
+                <input type="checkbox" id="BigLetters" checked> 
+                
+                <label for="SmallLetters">Klein-Buchstaben</label>
+                <input type="checkbox" id="SmallLetters" checked> 
+
+                <label for="Number">Zahlen</label>
+                <input type="checkbox" id="Number" checked> 
+
+                <label for="symbole">symbole</label>
+                <input type="checkbox" id="symbole" checked> 
+            </div>
+            <input type="button" id="btn" class="btn" value="Generieren" />
+        </div>
+        <div class="ResultCotainer">
+            <input type="text" id="Result" class="Result" min="3" max="20" disabled/><br> 
+            <input type="button" id="Clipboard" class="Clipboard" value="Kopieren">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

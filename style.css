@@ -1,0 +1,135 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+body 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    min-height: 100dvh;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(140deg, rgb(97, 197, 201), rgb(175, 22, 189)); 
+    font-family: sans-serif;
+}
+
+h1, h2, p, label 
+{ 
+    color: white; 
+}
+
+.Container 
+{
+    width: 44%;
+    max-width: 100%;
+    border: rgba(66, 66, 151, 0.6) 2px solid;
+    background-color: rgba(66, 66, 151, 0.6);
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.SelectionContainer 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 16px;
+    margin: 40px 0;
+}
+
+label 
+{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: clamp(0.9rem, 2.5vw, 1.3rem);
+    margin: 0;
+}
+
+.LegthContainer 
+{
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+
+.btn,
+.Clipboard 
+{
+    min-height: 44px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn 
+{
+    background-color: rgb(9, 217, 224);
+    border: rgb(164, 210, 216) 2px solid;
+    color: black;
+}
+
+.Clipboard 
+{
+    background-color: orange;
+    border: black 2px solid;
+    margin: 20px 0;
+}
+
+
+.Result 
+{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    min-height: 30px;
+    padding: 4px 10px;
+    margin: 10px auto 25px;
+
+    background-color: white;
+    border: white 2px solid;
+    border-radius: 20px;
+
+    color: black;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    text-align: center;
+    font-family: monospace;
+}
+
+.Zeichen 
+{
+
+    height: 30px;
+    width: auto;
+    flex-shrink: 0;
+
+    text-align: center;
+    font-size: 20px;;
+}
+
+.ResultCotainer 
+{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Mobil: Container volle Breite */
+@media (max-width: 600px)
+{
+    .Container 
+    {
+        width: 100%;
+        padding: 15px;
+        border-radius: 20px;
+    }
+}
